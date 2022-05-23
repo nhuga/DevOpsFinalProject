@@ -1,18 +1,17 @@
+<!DOCTYPE html>
 <html>
-<head><title>First JSP</title></head>
-<body>
-  <%
-    double num = Math.random();
-    if (num > 0.50) {
-  %>
-      <h2>You'll have a luck day!</h2><p>(<%= num %>)</p>
-  <%
-    } else {
-  %>
-      <h2>Well, life goes on...</h2><p>(<%= num %>)</p>
-  <%
-    }
-  %>
-  <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
-</body>
+  <head>
+    <title>Coin Flipper</title>
+  </head>
+  <body>
+    <h1>Coin Flipper</h1>
+    <p>Flipping a coin...</p>
+    <% if(Math.random() < .5){ %>
+      <p>Heads!</p>
+    <% } else{ %>
+      <p>Tails!</p>
+    <% } %>
+    <hr>
+    <p>Refresh to flip again.</p>
+  </body>
 </html>
