@@ -14,7 +14,7 @@
     <hr>
     <p>Refresh to flip again.</p>
 <p>
-Devops Final Project
+Devops Final Project - Created by Niv Huga, Yarden Gispan and Bar Machluf.
 </p>
   </body>
 </html>
